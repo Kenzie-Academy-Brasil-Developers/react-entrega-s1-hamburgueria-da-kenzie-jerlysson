@@ -1,0 +1,47 @@
+div,
+p,
+h2,
+h3,
+h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 80vw;
+  border: 1px solid black;
+}
+.prodList {
+  display: flex;
+  /* border: 1px solid green; */
+  width: 65%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.carBox {
+  width: 35%;
+  border: 1px solid blue;
+}
