@@ -32,7 +32,7 @@ h1 {
   display: flex;
   margin: 0 auto;
   width: 80vw;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .prodList {
   display: flex;
@@ -43,5 +43,5 @@ h1 {
 }
 .carBox {
   width: 35%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
