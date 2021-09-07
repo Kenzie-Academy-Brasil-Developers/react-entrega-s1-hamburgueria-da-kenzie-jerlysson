@@ -5,15 +5,16 @@ const Form = ({ showProducts }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   return (
-    <div>
+    <div className="inputBox">
       <input
         className="input"
         value={filteredProducts}
         onChange={(e) => setFilteredProducts(e.target.value)}
       />
-      <button className="inputBtn" onClick={(e) => showProducts(e)}>
+      <button className="btn seach" onClick={(e) => showProducts(e)}>
         Buscar
       </button>
+      <button className="btn all">Todos</button>
     </div>
   );
 };

@@ -63,7 +63,8 @@ function App() {
         <div className="carBox">
           <h3>Carrinho</h3>
           <Cart currentSale={currentSale} clickRemove={clickRemove} />
-          <span>Total: {valorTotal.toFixed(2)}R$</span>
+          <span className="total">Total: {valorTotal.toFixed(2)}R$</span>
+          <button className="buy">Pagar</button>
         </div>
       </section>
     </div>

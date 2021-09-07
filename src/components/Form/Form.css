@@ -1,8 +1,36 @@
-.input {
-  height: 3em;
-  width: 23em;
+button,
+input {
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
-.inputBtn {
-  height: 3.6em;
-  width: 7em;
+.inputBox {
+  width: 100vw;
+  max-width: 700px;
+  margin-bottom: 1.5em;
+}
+.input {
+  width: 70%;
+  font-size: 15px;
+  padding: 5px 0 5px 0;
+}
+.btn {
+  background-color: rgb(66, 66, 194);
+  font-size: 15px;
+  padding: 5px;
+  color: rgb(168, 167, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+.seach {
+  width: 17%;
+}
+.all {
+  width: 13%;
+}
+.btn:hover {
+  background-color: rgb(43, 43, 133);
+}
+.btn:active {
+  border-radius: 15px 15px 0 0;
 }

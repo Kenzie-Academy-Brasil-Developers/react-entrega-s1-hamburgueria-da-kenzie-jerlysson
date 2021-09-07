@@ -1,5 +1,48 @@
 .itemBox {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 238, 238);
   width: 100%;
-  /* border: 1px solid pink; */
   text-align: start;
+  box-sizing: border-box;
+}
+.itemBox > p {
+  padding: 5px;
+}
+.name {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.price {
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 0;
+}
+.addBtn {
+  cursor: pointer;
+  background-color: rgb(72, 172, 72);
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.3em;
+  color: rgb(221, 255, 213);
+}
+.addBtn:hover {
+  background-color: rgb(55, 107, 55);
+}
+.addBtn:active {
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .itemBox {
+    border-radius: 10px 10px 0 0;
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+  }
+}
+@media screen and (min-width: 800px) {
+  .itemBox {
+    width: 33%;
+  }
 }

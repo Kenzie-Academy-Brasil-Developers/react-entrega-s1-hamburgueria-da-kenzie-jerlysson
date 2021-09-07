@@ -4,9 +4,11 @@ const Cart = ({ currentSale, clickRemove }) => {
     <>
       {currentSale.map((item, index) => (
         <div key={index} id={index} className="cartBox">
-          <p>{item.name}</p>
+          <p className="CartName">{item.name}</p>
           <p>Valor: {item.price}</p>
-          <button onClick={clickRemove}>Remover este</button>
+          <button className="cartBtn" onClick={clickRemove}>
+            Remover
+          </button>
         </div>
       ))}
     </>
