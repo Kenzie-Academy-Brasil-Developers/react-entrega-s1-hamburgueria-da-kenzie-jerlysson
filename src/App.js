@@ -15,16 +15,19 @@ function App() {
     { id: 6, name: "Coca", category: "Bebidas", price: 4.99 },
     { id: 7, name: "Fanta", category: "Bebidas", price: 4.99 },
   ]);
-
   const [currentSale, setCurrentSale] = useState([]);
-  // const [cartTotal, setCartTotal] = useState(0);
+  const [seachList, setSeachList] = useState([]);
 
   const showProducts = (e) => {
+    setSeachList([...product]);
     const seachItem = e.target.previousSibling.value.toLowerCase();
     const newProd = product.filter(function (item) {
       return item.name.toLowerCase().indexOf(seachItem) > -1;
     });
     setProduct([...newProd]);
+  };
+  const resetBtn = () => {
+    setProduct([...seachList]);
   };
 
   const clickRemove = (e) => {
@@ -54,7 +57,7 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <h1>Hamburgueria da Kenzie</h1>
         </div>
-        <Form showProducts={showProducts} />
+        <Form showProducts={showProducts} resetBtn={resetBtn} />
       </header>
       <section className="container">
         <div className="prodList">

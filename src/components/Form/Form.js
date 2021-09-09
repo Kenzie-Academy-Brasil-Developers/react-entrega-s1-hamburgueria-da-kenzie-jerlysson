@@ -1,7 +1,7 @@
 import "./Form.css";
 import { useState } from "react";
 
-const Form = ({ showProducts }) => {
+const Form = ({ showProducts, resetBtn }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   return (
@@ -14,7 +14,9 @@ const Form = ({ showProducts }) => {
       <button className="btn seach" onClick={(e) => showProducts(e)}>
         Buscar
       </button>
-      <button className="btn all">Todos</button>
+      <button className="btn all" onClick={resetBtn}>
+        Todos
+      </button>
     </div>
   );
 };
